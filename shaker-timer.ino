@@ -16,9 +16,10 @@ void setup() {
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);       // turn the LED on (HIGH is the voltage level)
   digitalWrite(relayInput, HIGH);        // turn relay on   
-  delay(2000);                          // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);       // turn the LED off by making the voltage LOW
-  digitalWrite(relayInput, LOW);      // turn relay off
+  delay(9000);   // delay for cover change
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);       
+  digitalWrite(relayInput, LOW);    // filling relay time
 
-  delay(7000);                       // wait for a second
+  delay(8000);  // filling time
 }
